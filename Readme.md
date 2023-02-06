@@ -17,4 +17,8 @@ https://turbologo.com/designs/19869917
 
 https://teywa-oziol.github.io/iPortfolio/#contact
 
+
+- mettre a jour le cv papier
+- mettre les projets covid impot, 
+
 #### License: https://bootstrapmade.com/license/
