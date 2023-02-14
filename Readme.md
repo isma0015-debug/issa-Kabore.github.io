@@ -11,4 +11,7 @@ This project was built using these technologies.
 - Template Name: iPortfolio
 - Skills icons: https://devicon.dev/
 
+
+TODO: add english version
+
 #### License: https://bootstrapmade.com/license/
