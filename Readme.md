@@ -3,7 +3,7 @@
 
 > My personal portfolio which features some of my github projects as well as my resume and technical skills.<br/>
 
-
+Last Update: 17/04/2024
 This project was built using these technologies.
 - HTML
 - CSS3
