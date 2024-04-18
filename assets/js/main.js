@@ -253,4 +253,89 @@
     })
   });
 
+  var btncopy = document.querySelector('.js-copy');
+if(btncopy) {
+    btncopy.addEventListener('click', docopy);
+}
+
+function docopy() {
+    var range = document.createRange();
+    var target = this.dataset.target;
+    var fromElement = document.querySelector(target);
+    var selection = window.getSelection();
+
+    range.selectNode(fromElement);
+    selection.removeAllRanges();
+    selection.addRange(range);
+
+    try {
+        var result = document.execCommand('copy');
+        if (result) {
+            // La copie a réussi
+            alert('Copié !');
+        }
+    }
+    catch(err) {
+        // Une erreur est surevnue lors de la tentative de copie
+        alert(err);
+    }
+
+    selection = window.getSelection();
+
+    if (typeof selection.removeRange === 'function') {
+        selection.removeRange(range);
+    } else if (typeof selection.removeAllRanges === 'function') {
+        selection.removeAllRanges();
+    }
+}
+
+
+
+
+const copyEmailBtn = document.querySelector('#copy-email');
+
+copyEmailBtn.addEventListener('click', () => {
+  // Créez un élément temporaire de textarea pour stocker l'adresse e-mail
+  const emailTextarea = document.createElement('textarea');
+  emailTextarea.textContent = 'kabore.khalid@outlook.fr';
+  document.body.appendChild(emailTextarea);
+
+  // Sélectionnez et copiez le texte dans la zone de texte
+  emailTextarea.select();
+  document.execCommand('copy');
+
+  // Retirez l'élément de la page
+  document.body.removeChild(emailTextarea);
+
+  
+  // Mettez à jour le texte et la couleur du bouton pour signaler que l'e-mail a été copié
+  copyEmailBtn.textContent = 'Copié';
+  copyEmailBtn.style.backgroundColor = '#daf2bd';
+
+  
+
+  // Utilisez setTimeout() pour que le bouton redevienne à sa couleur initiale après un certain temps
+  setTimeout(() => {
+    copyEmailBtn.textContent = 'Copier email';
+    copyEmailBtn.style.backgroundColor = 'initial';
+    //copyEmailButton.innerHTML = '<img src="/assets/img/svg/20-copy.svg" alt="Icône de copie" width="16" height="16"> Copier'
+  }, 1000);
+
+  // Remettre l'image SVG dans le bouton 
+  //copyEmailButton.innerHTML = '<img src="/assets/img/svg/20-copy.svg" alt="Icône de copie" width="16" height="16"> Copier'
+
+});
+
+
+$(document).ready(function() {
+  $('.text-popup-link').magnificPopup({
+    type:'inline',
+    midClick:true,
+    closeBtnInside: true,
+    disableOn: { width: 100 }
+  });
+});
+
+
+ 
 })()
