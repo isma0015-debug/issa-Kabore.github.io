@@ -72,10 +72,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Développement d'une plateforme «HealthHub» d'analyse de données</h2>
+          <h2>Génération de rapports visuels</h2>
           <ol>
             <li><a href="../index.html">Home</a></li>
-            <li>Portfolio Details</li>
+            <li>Portfoio Details</li>
           </ol>
         </div>
 
@@ -92,12 +92,18 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                    <img src="../assets/img/portfolio/portfolio-hh.png" alt="">
+                    <img src="../assets/img/portfolio/alstom3.jpeg" alt="">
                   </div>
 
                   <div class="swiper-slide">
-                    <img src="../assets/img/portfolio/alstom3.jpeg" alt="">
+                    <img src="../assets/img/portfolio/alstom1.jpeg" alt="">
                   </div>
+                  <div class="swiper-slide">
+                    <img src="../assets/img/portfolio/alstom2.jpeg" alt="">
+                  </div>
+    
+                  
+            
                   
               </div>
               <div class="swiper-pagination"></div>
@@ -108,59 +114,75 @@
             <div class="portfolio-info">
               <h3>Informations sur le projet</h3>
               <ul>
-                <li><strong>Rôle </strong>: Data Scientist</li>
+                <li><strong>Rôle </strong>: Data Scientist, Data Analyst</li>
                 <li><strong>Entreprise </strong>: <a href="https://www.alstom.com/fr"> ALSTOM </a></li>
-                <li><strong>Durée de la mission </strong>: 7 mois.</li>
-                <li><strong>Objectif </strong>: Developpement d'une librairie d'analyse de données.</li>
-                <li><strong>Données </strong>: Trains, Metros, Trams, etc.</li>
+                <li><strong>Durée de la mission </strong>: depuis Février 2023.</li>
+                <li><strong>Objectif </strong>: Analyser les données (Transport) puis deployer des rapports Tableau Software. </li>
+                <li><strong>Données </strong>: Energie, Trains, Metros, Trams, Incidents, Alertes, etc.</li>
                 
               </ul>
             </div>
+
+            <div class="row gy-4">
+              <div class="portfolio-description">
+                
+                <h5>Outils utilisés</h5>
+                <ul>
+                  <li><em>Python</em>: Scikit-learn, Numpy, Pandas, Logger</li>
+                  <li><em>Python Web</em>: Requests, BeautifulSoup, ElasticSearch</li>
+                  <li><em>Data Viz</em>: Tableau Software, PowerBI, Plotly, Matplotlib</li>
+                  <li><em>Type de fichiers</em> : Parquet, Csv, JSON, XML, Yml</li>
+                  <li><em>Git, GitHub</em></li>
+                  <li><em>PyCharm, Jupyter Notebook</em></li>
+                </ul>
+                </p>
+              </div>
+              </div>
+    
             </div>
 
         </div>
-
+        
         <div class="row gy-4">
-          
-          <div class="col">
-
-
-            <div class="portfolio-description">
+          <div class="portfolio-description"> 
+            <div class="portfolio-description"> 
               <h5>Missions réalisées </h5> 
-              <ul> 
-                <li><em>Développement Librairie Python « AlstomPy »</em></li>
-                <ul>
-                  <li><em>Conception des fonctions Python permettant d'interagir avec la donnée dans le HealthHub </em></li>
-                  <li><em>Portage de fonctions R en Python </em></li>
-                  <li><em>Ajout de connecteurs standard d'import écrit en Python</em></li>
-                  <li><em>Extensions des services autour de Tableau Server (Software)</em></li>
-                  <li><em>Conception et réflexion sur les services à apporter autour et en complément de la plateforme</em></li>
-                  <li><em>La réalisation de la documentation associée</em></li>
+                <ul> 
+                  <li><em>Projet1: Génération de rapports visuels (Tableau) permettant de monitorer la consommation énergétique de trains/métros en Suède</em></li>
+                  <ul>
+                    <li><em>Recueil et intégration des besoins clients </em></li>
+                    <li><em>Intégration et traitement des données venant directement des trains</em></li>
+                    <li><em>Requêtage SQL (avec jointure) pour extraire les données d'énergie</em></li>
+                    <li><em>Analyse et comparaison avec PowerBI des formats de fichiers (Csv, Feather, Parquet et Pickle) afin de trouver un format optimal pour les données d’énergie</em></li>
+                    
+                    <li><em>Stockage et manipulation de fichiers cache sous ElasticSearch</em></li>
+                    <li><em>Déploiement de scripts de génération sur plusieurs environnements (Dev, Stagging et Production)</em></li>
+                    <li><em>Collaboration avec les équipes à l'international (anglaises, suédoises, indiennes et italiennes)</em></li>
+                  </ul>
+                  <br>
+                  <li><em>Projet2: Proof-of-concept sur la génération de rapports sur les données d'évènements (alertes, incidents, etc) des trains/métros selon le projet (client)</em></li>
+                  <ul>
+                    <li><em>Ecoute et prise en compte des besoins clients : projets localisés à Londres, Madrid et Inde</em></li>
+                    <li><em>Requête API et gestion des réponses en python </em></li>
+                    <li><em>Traitement et nettoyage des évènements avec des librairies python comme pandas, numpy, requests</em></li>
+                    <li><em>Déploiement autonome de rapports Tableau sur la plateforme d'exécution du client</em></li>
+                  </ul><br>
+                  <li><em>
+                    Réalisation de la documentation associée et des manuels d'utilisation</em></li>
+                    <br>
+                  <li><em>Gestion et organisation des missions avec l'outil Notion.</em></li>
+
                 </ul>
-                <br>
-                <li><em>Tests, Intégration et Déploiement de services</em></li>
-                <ul>
-                  <li><em>Ecriture et déploiement de fonctions tests de la librairie</em></li>
-                  <li><em>Maintien d'un rapport/plan de tests</em></li>
-                  <li><em>Test des APIs de la plateforme</em></li>
-                  <li><em>Relever et communiquer les erreurs</em></li>
-                </ul>
-              </ul>
-              <h5>Outils utilisés</h5>
-              <ul>
-                <li><em>Python</em> : Pytest, Pandas, Logger</li>
-                <li><em>Python Web</em> : Boto, Requests, BeautifulSoup</li>
-                <li><em>Type de fichiers</em> : Feather, Csv, JSON, XML, Yml</li>
-                <li><em>Git, GitHub</em></li>
-                <li><em>API, Séries temporelles</em></li>
-                <li><em>PyCharm, Jupyter Notebook</em></li>
-              </ul>
-              </p>
             </div>
           </div>
-
+            
+             
+             
         </div>
 
+      </div>
+
+  </div>
       </div>
     </section><!-- End Portfolio Details Section -->
 
@@ -184,19 +206,19 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="../assets/vendor/purecounter/purecounter.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/typed.js/typed.min.js"></script>
-  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/typed.js/typed.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
 
 </body>
 
